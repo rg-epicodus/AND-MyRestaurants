@@ -14,12 +14,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="MyRestaurants"
-        android:layout_marginTop="35dp"
-        android:id="@+id/appNameTextView"
-        android:textColor="@color/icons"
-        android:textSize="40sp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:textColor="@color/icons"
+        android:textSize="60sp"
+        android:id="@+id/appNameTextView"
         android:textStyle="bold"/>
 
     <EditText
