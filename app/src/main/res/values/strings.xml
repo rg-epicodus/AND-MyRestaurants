@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">MyRestaurants</string>
+    <string name="one_cuisine_type">One Cuisine Type</string>
+    <string name="rating">Rating</string>
+    <string name="restaurant_name">Restaurant Name</string>
 </resources>
