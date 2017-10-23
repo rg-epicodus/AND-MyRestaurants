@@ -24,7 +24,7 @@ import org.parceler.Parcels;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class RestaurantDetailFragment extends Fragment implements View.OnClickListener{
+public class RestaurantDetailFragment extends Fragment implements View.OnClickListener {
     private static final int MAX_WIDTH = 400;
     private static final int MAX_HEIGHT = 300;
 
@@ -106,4 +106,5 @@ public class RestaurantDetailFragment extends Fragment implements View.OnClickLi
             Toast.makeText(getContext(), "Saved", Toast.LENGTH_SHORT).show();
         }
     }
+
 }
