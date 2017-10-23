@@ -8,14 +8,13 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorPrimaryDark"
         tools:ignore="UselessParent">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="180dp"
             android:id="@+id/restaurantImageView"
-            android:src="@drawable/waffles"
             android:scaleType="centerCrop"
             tools:ignore="ContentDescription" />
 
@@ -47,7 +46,7 @@
                 android:layout_alignTop="@+id/restaurantNameTextView"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
-                android:textColor="@color/colorAccent"
+                android:textColor="@color/primary_dark"
                 android:textStyle="bold"
                 tools:ignore="RelativeOverlap" />
 
@@ -129,7 +128,7 @@
                 android:text="@string/save_restaurant"
                 android:id="@+id/saveRestaurantButton"
                 android:layout_alignParentBottom="true"
-                android:background="@color/colorAccent"
+                android:background="@color/primary"
                 android:textColor="@color/colorTextIcons"
                 android:textSize="15sp" />
         </RelativeLayout>
