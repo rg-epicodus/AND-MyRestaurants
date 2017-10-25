@@ -38,12 +38,10 @@ public class FirebaseRestaurantViewHolder extends RecyclerView.ViewHolder implem
         super(itemView);
         mView = itemView;
         mContext = itemView.getContext();
-        itemView.setOnClickListener(this);
     }
 
     public void bindRestaurant(Restaurant restaurant) {
         mRestaurantImageView = (ImageView) mView.findViewById(R.id.restaurantImageView);
-        ImageView restaurantImageView = (ImageView) mView.findViewById(R.id.restaurantImageView);
         TextView nameTextView = (TextView) mView.findViewById(R.id.restaurantNameTextView);
         TextView categoryTextView = (TextView) mView.findViewById(R.id.categoryTextView);
         TextView ratingTextView = (TextView) mView.findViewById(R.id.ratingTextView);
