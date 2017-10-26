@@ -51,6 +51,18 @@
                 tools:ignore="RelativeOverlap" />
 
             <TextView
+                android:id="@+id/priceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/price_label"
+                android:textColor="@color/primary_dark"
+                android:textStyle="bold"
+                tools:ignore="RelativeOverlap"
+                android:layout_below="@+id/ratingTextView" />
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/brunch_american"

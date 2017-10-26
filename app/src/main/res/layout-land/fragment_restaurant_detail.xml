@@ -9,7 +9,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorPrimary">
+        android:background="@color/colorPrimaryDark">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -22,7 +22,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/restaurantImageView"
-                android:src="@drawable/waffles"
                 android:scaleType="centerCrop" />
 
             <LinearLayout
@@ -125,6 +124,18 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"/>
 
+                <TextView
+                    android:id="@+id/priceTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/ratingTextView"
+                    android:text="@string/price_label"
+                    android:textColor="@color/primary_dark"
+                    android:textStyle="bold"
+                    tools:ignore="RelativeOverlap" />
+
             </RelativeLayout>
 
         </LinearLayout>
@@ -136,7 +147,7 @@
             android:text="Save Restaurant"
             android:id="@+id/saveRestaurantButton"
             android:layout_alignParentBottom="true"
-            android:background="@color/colorAccent"
+            android:background="@color/colorPrimary"
             android:textColor="@color/colorTextIcons"
             android:textSize="15sp" />
     </LinearLayout>

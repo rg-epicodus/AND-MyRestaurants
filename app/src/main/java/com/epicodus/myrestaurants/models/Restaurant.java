@@ -18,10 +18,11 @@ public class Restaurant {
     List<String> categories = new ArrayList<>();
     private String pushId;
     String index;
+    String price;
 
     public Restaurant() {}
 
-    public Restaurant(String name, String phone, String website,
+    public Restaurant(String name, String phone, String website, String price,
                       double rating, String imageUrl, ArrayList<String> address,
                       double latitude, double longitude, ArrayList<String> categories) {
 
@@ -35,6 +36,7 @@ public class Restaurant {
         this.longitude = longitude;
         this.categories = categories;
         this.index = "not_specified";
+        this.price = price;
     }
 
     public String getName() {
@@ -89,4 +91,7 @@ public class Restaurant {
         this.index = index;
     }
 
+    public String getPrice() {
+        return price;
+    }
 }

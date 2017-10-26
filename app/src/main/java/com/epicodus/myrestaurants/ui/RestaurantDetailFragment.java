@@ -49,6 +49,7 @@ public class RestaurantDetailFragment extends Fragment implements View.OnClickLi
     @Bind(R.id.phoneTextView) TextView mPhoneLabel;
     @Bind(R.id.addressTextView) TextView mAddressLabel;
     @Bind(R.id.saveRestaurantButton) TextView mSaveRestaurantButton;
+    @Bind(R.id.priceTextView) TextView mPriceLabel;
 
     private Restaurant mRestaurant;
     private ArrayList<Restaurant> mRestaurants;
@@ -109,6 +110,7 @@ public class RestaurantDetailFragment extends Fragment implements View.OnClickLi
         mRatingLabel.setText(Double.toString(mRestaurant.getRating()) + "/5");
         mPhoneLabel.setText(mRestaurant.getPhone());
         mAddressLabel.setText(android.text.TextUtils.join(", ", mRestaurant.getAddress()));
+        mPriceLabel.setText(mRestaurant.getPrice());
 
         mWebsiteLabel.setOnClickListener(this);
         mPhoneLabel.setOnClickListener(this);

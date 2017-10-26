@@ -16,4 +16,8 @@
     <string name="brunch_american">Brunch, American</string>
     <string name="restaurantname">Restaurant Name</string>
     <string name="save_restaurant">Save Restaurant</string>
+    <string name="price_label">$$$$</string>
+    <string name="onecuisinetype">One Cuisine Type</string>
+    <string name="ratinglayout">Rating</string>
+    <string name="restaurant_name_layout">Restaurant Name</string>
 </resources>

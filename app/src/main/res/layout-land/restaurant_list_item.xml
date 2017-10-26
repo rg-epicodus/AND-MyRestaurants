@@ -42,6 +42,6 @@
             android:text="Rating"
             android:visibility="gone"
             android:id="@+id/ratingTextView"
-            android:textColor="@color/colorAccent"/>
+            android:textColor="@color/colorPrimary"/>
     </LinearLayout>
 </LinearLayout>

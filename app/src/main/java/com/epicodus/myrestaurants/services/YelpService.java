@@ -50,6 +50,7 @@ public class YelpService {
                 String name = restaurantJSON.getString("name");
                 String phone = restaurantJSON.optString("display_phone", "Phone not available");
                 String website = restaurantJSON.getString("url");
+                String price = restaurantJSON.getString("price");
                 double rating = restaurantJSON.getDouble("rating");
 
                 String imageUrl = restaurantJSON.getString("image_url");
@@ -71,7 +72,7 @@ public class YelpService {
                 for (int y = 0; y < categoriesJSON.length(); y++) {
                     categories.add(categoriesJSON.getJSONObject(y).getString("title"));
                 }
-                Restaurant restaurant = new Restaurant(name, phone, website, rating,
+                Restaurant restaurant = new Restaurant(name, phone, website, price, rating,
                         imageUrl, address, latitude, longitude, categories);
                 restaurants.add(restaurant);
             }

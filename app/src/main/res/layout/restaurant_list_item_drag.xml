@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -10,10 +11,13 @@
 
         <ImageView
             android:layout_width="130dp"
-            android:layout_height="100dp"
+            android:layout_height="120dp"
             android:id="@+id/restaurantImageView"
-            android:src="@drawable/waffles"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            tools:ignore="ContentDescription" />
 
         <ImageView
             android:id="@+id/dragIcon"
@@ -22,48 +26,63 @@
             android:layout_alignLeft="@id/restaurantImageView"
             android:layout_alignBottom="@id/restaurantImageView"
             android:gravity="bottom|left"
-            android:src="@drawable/ic_reorder_white_24dp"/>
+            android:src="@drawable/ic_reorder_white_24dp"
+            tools:ignore="ContentDescription,RtlHardcoded" />
 
     </RelativeLayout>
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:background="#ffffff"
         android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
         android:padding="10dp">
 
         <TextView
+            android:id="@+id/restaurantNameTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/restaurantNameTextView"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:text="Restaurant Name"
-            android:textColor="@color/colorPrimary"/>
+            android:text="@string/restaurant_name_layout"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/categoryTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="One Cuisine Type"
-            android:id="@+id/categoryTextView"
-            android:layout_below="@+id/restaurantNameTextView"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:textStyle="italic"/>
+            android:layout_below="@+id/restaurantNameTextView"
+            android:text="@string/onecuisinetype"
+            android:textStyle="italic"
+            tools:ignore="ObsoleteLayoutParam" />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
+                android:id="@+id/priceTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Rating"
+                android:text="@string/price_label"
+                android:textColor="@color/primary_dark"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
                 android:id="@+id/ratingTextView"
-                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:textColor="@color/colorAccent"/>
+                android:layout_alignParentTop="true"
+                android:text="@string/ratinglayout"
+                android:textColor="@color/colorPrimary"
+                tools:ignore="RelativeOverlap" />
         </RelativeLayout>
     </LinearLayout>
 </LinearLayout>

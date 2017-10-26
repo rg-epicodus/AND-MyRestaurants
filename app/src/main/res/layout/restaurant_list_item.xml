@@ -7,36 +7,36 @@
 
     <ImageView
         android:layout_width="130dp"
-        android:layout_height="100dp"
+        android:layout_height="match_parent"
         android:id="@+id/restaurantImageView"
         android:scaleType="centerCrop"
         android:contentDescription=""
         tools:ignore="ContentDescription" />
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
+        android:layout_height="125dp"
         android:background="#ffffff"
-        android:layout_height="match_parent"
+        android:orientation="vertical"
         android:padding="10dp">
 
         <TextView
+            android:id="@+id/restaurantNameTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/restaurantNameTextView"
-            android:textSize="20sp"
-            android:textStyle="bold"
             android:text="@string/restaurant_name"
-            android:textColor="@color/colorPrimary"/>
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/categoryTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/one_cuisine_type"
-            android:id="@+id/categoryTextView"
-            android:layout_below="@+id/restaurantNameTextView"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
+            android:layout_below="@+id/restaurantNameTextView"
+            android:text="@string/one_cuisine_type"
             android:textStyle="italic"
             tools:ignore="ObsoleteLayoutParam" />
 
@@ -45,12 +45,12 @@
             android:layout_height="match_parent">
 
             <TextView
+                android:id="@+id/ratingTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/rating"
-                android:id="@+id/ratingTextView"
-                android:layout_alignParentBottom="true"
                 android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/rating"
                 android:textColor="@color/primary"
                 tools:ignore="RtlHardcoded" />
         </RelativeLayout>

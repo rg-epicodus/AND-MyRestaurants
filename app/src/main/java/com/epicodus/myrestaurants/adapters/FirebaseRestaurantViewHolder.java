@@ -31,6 +31,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import static com.epicodus.myrestaurants.R.id.categoryTextView;
+import static com.epicodus.myrestaurants.R.id.priceTextView;
 import static com.epicodus.myrestaurants.R.id.ratingTextView;
 import static com.epicodus.myrestaurants.R.id.restaurantImageView;
 import static com.epicodus.myrestaurants.ui.RestaurantDetailFragment.decodeFromFirebaseBase64;
@@ -58,6 +59,7 @@ public class FirebaseRestaurantViewHolder extends RecyclerView.ViewHolder implem
         TextView mNameTextView = (TextView) mView.findViewById(R.id.restaurantNameTextView);
         TextView mCategoryTextView = (TextView) mView.findViewById(categoryTextView);
         TextView mRatingTextView = (TextView) mView.findViewById(ratingTextView);
+        TextView mPriceTextView = (TextView) mView.findViewById(priceTextView);
 
         if (!restaurant.getImageUrl().contains("http")) {
             try {
@@ -75,10 +77,12 @@ public class FirebaseRestaurantViewHolder extends RecyclerView.ViewHolder implem
             mNameTextView.setText(restaurant.getName());
             mCategoryTextView.setText(restaurant.getCategories().get(0));
             mRatingTextView.setText("Rating: " + restaurant.getRating() + "/5");
+            mPriceTextView.setText(restaurant.getPrice());
         }
         mNameTextView.setText(restaurant.getName());
         mCategoryTextView.setText(restaurant.getCategories().get(0));
         mRatingTextView.setText("Rating: " + restaurant.getRating() + "/5");
+        mPriceTextView.setText(restaurant.getPrice());
     }
 
     @Override

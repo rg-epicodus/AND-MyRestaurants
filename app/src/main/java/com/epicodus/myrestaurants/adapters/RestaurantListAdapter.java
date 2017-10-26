@@ -65,6 +65,7 @@ public class RestaurantListAdapter extends RecyclerView.Adapter<RestaurantListAd
         @Bind(R.id.restaurantNameTextView) TextView mNameTextView;
         @Bind(R.id.categoryTextView) TextView mCategoryTextView;
         @Bind(R.id.ratingTextView) TextView mRatingTextView;
+        @Bind(R.id.priceTextView) TextView mPriceTextView;
 
         private Context mContext;
         private int mOrientation;
@@ -103,6 +104,7 @@ public class RestaurantListAdapter extends RecyclerView.Adapter<RestaurantListAd
             mNameTextView.setText(restaurant.getName());
             mCategoryTextView.setText(restaurant.getCategories().get(0));
             mRatingTextView.setText("Rating: " + restaurant.getRating() + "/5");
+            mPriceTextView.setText(restaurant.getPrice());
         }
 
         @Override
